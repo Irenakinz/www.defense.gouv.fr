@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/ccs2?family=Poppins&display=swap');
+        
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        ul{
+            list-style: none;
+            background: #1d1d1d;
+        }
+        ul li{
+            display: inline-block;
+            position: relative;
+        }
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        ul li ul.dropdown li {
+            display: block;
+        }
+        ul li ul.dropdown {
+            width: 100%;
+            background: #1d1d1d;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+        ul li a:hover {
+            background:rgb(85, 89, 110);
+        }
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+        body{
+            background-color:#131313;
+            margin: 0; 
+            width: 100%;
+            height: auto;  
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;     
+        }
+        h3{
+            color: aliceblue;
+            margin-left: 30%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .Image22{
+            width: auto;
+            justify-content: center;
+        }
+        .bas{
+            width: 1140px;
+            margin: auto;
+            justify-content: center;
+            flex: 1;
+        }
+        .contenu1{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .para10{
+            color: aliceblue;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            margin-left: 0;
+        }
+        h1{
+            color: aliceblue;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        h4{
+            color: aliceblue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .Image10{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .Image11{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .Image12{
+            margin-top: 30px;
+            margin-bottom: 150px;
+        }
+        footer{
+            background-color:#343434
+            color= rgb(255, 255, 255);
+        }
+        .footer-section{
+            flex: 1;
+            margin: 0;
+        }
+        .footer-section h2 {
+            border-bottom: 1px solid rgb(86, 67, 255);
+            padding-bottom: 10px;
+            color: white;
+            padding: 50px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+        .footer-section ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section ul li a :hover {
+            text-decoration:underline;
+        }
+        .bas{
+            width: 1140px;
+            margin: auto;
+            justify-content: center;
+            flex: 1;
+        }
+        .column{
+            float: left;
+            width: 15%;
+            padding: 25px;
+            margin-left: 5px;
+            margin-bottom: 50px;
+        }
+        .row{
+            content:"";
+            display: flex;
+            clear: both;
+        }
+        .media{
+            background: rgb(19, 22, 39);
+        }
+        .media1{
+            margin-left: 75%;
+            position: absolute;
+            margin-top: 50px;
+        }
+        .media2{
+            margin-left: 80%;
+            position: absolute;
+            margin-top: 53px;
+        }
+        .media3{
+            margin-left: 85%;
+            position: absolute;
+            margin-top: 53px;
+        }
+        .media4{
+            margin-left: 90%;
+            position: absolute;
+            margin-top: 50px;
+        }
+        .media5{
+            margin-left: 95%;
+            position: absolute;
+            margin-top: 53px;
+        }
+        .media a :hover{
+            background:rgb(85, 89, 110);
+        }
+        hr{
+            color: #8384df;
+            width: auto;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .lien h5{
+            margin-left: 50px;
+            margin-bottom: 15px;
+        }
+        .logo1{
+            width: 200PX;
+        }
+        h6{
+            color: #464646;
+            column-count: 1;
+            column-gap: 20px;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+        p{
+            font-size: 12px;
+            color: #464646;
+            margin-left: 40px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="Accueil.html"><img class="logo" src="Image6.jpg" alt="Image6.jpg"></a></li>
+            <li>
+                <a href="#">Ministère</a>
+                <ul class="dropdown">
+                    <li><a href="Mission.html">Mission</a></li>
+                </ul>
+            </li>
+            <li><a href="Les opérations militaires.html">Les opérations militaires</a></li>
+            <li>
+                <a href="#">Nos expertises</a>
+                <ul class="dropdown">
+                    <li><a href="Infrastructure et immobilier.html">Infrastructure et immobilier</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Nos enjeux</a>
+                <ul class="dropdown">
+                    <li><a href="Droit et défense.html">Droit et défense</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Presse</a>
+                <ul class="dropdown">
+                    <li><a href="Contacts.html">Contacts</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contenu1">
+
+    <h1 class="title">Les missions du ministère des Armées et des Anciens combattants
+    </h1>
+    <p class="para10" >À l’ère de la mondialisation, les notions de sécurité et de conflit ont évolué. Ce constat impose des réorientations stratégiques dans l’utilisation des moyens de défense au sein et à l’extérieur de notre pays.
+      </p>
+    <p class="para10">La stratégie de défense et de sécurité nationale est aujourd’hui définie grâce à six grandes fonctions stratégiques : connaissance-compréhension-anticipation ; dissuasion ; protection-résilience ; prévention ; intervention ; influence.
+       </p>
+    <img class="Image10" src="Image10.jpg" alt="Image10.jpg">
+    <p class="para10">Dans ce cadre, le rôle du ministère des Armées et des Anciens combattants est d’assurer la protection du territoire, de la population et des intérêts français. Il répond aussi à d’autres missions dans le cadre des accords et traités internationaux (OTAN) ou régionaux (Europe de la défense).
+
+        Au delà de ces missions, le ministère des Armées et des Anciens combattants s’implique également dans des missions de service public. Ses moyens humains et matériels soutiennent ou suppléent les actions d’autres ministères, au quotidien ou dans l’urgence, sur le territoire national et à l’étranger.
+        
+        </p>
+        <h1>Les opérations mixtes, civiles et militaires, hors du territoire national
+        </h1>
+        <p class="para10">Le cas le plus courant est celui d’opérations qui précèdent, accompagnent ou prolongent une action militaire, notamment pour la reconstruction ou la consolidation de la paix.
+        </p>
+        <p class="para10">Jusqu’à la fin de la guerre froide, la coupure était nette entre les opérations militaires, les guerres et les opérations civiles et civilo-militaires. Cette séparation s’est estompée, au point qu’il n’est plus guère possible de concevoir une opération militaire qui ne serait pas accompagnée d’une action civile.
+        </p>
+        <p class="para10">Ces opérations sont complexes et suscitent actuellement des réflexions doctrinales au niveau international. La stratégie de défense et de sécurité nationale a pour ambition de définir et développer pour la France une action globale des pouvoirs publics efficace et cohérente.
+            </p>
+
+            <h1>Les opérations conduites sur le territoire national
+            </h1>
+
+            <h4>La défense du territoire national et de la population est une priorité majeure.
+            </h4>
+            <p class="para10">Au même titre que tous les organismes relevant de l’autorité de l’État, la force militaire est appelée à agir en soutien, en accompagnement ou en complément des forces et moyens civils spécialisés.
+            </p>
+            <p class="para10">Les forces armées doivent pouvoir apporter leur concours auprès de l’État et de l’ensemble des pouvoirs publics (moyens et savoir-faire spécifiques) en cas d’urgence ou d’insuffisance des moyens civils, dans les cas de crise grave (catastrophe naturelle, accident technologique de grande ampleur, etc.).
+            </p>
+            <p class="para10">Afin d’assurer ce type de missions, des moyens humains et matériels des forces armées sont potentiellement mis à contribution, pour protéger la population, les structures essentielles de l’État et les organismes, installations ou moyens civils sensibles.
+            </p>   
+            <p class="para10">Suivant la nature du terrain (ville, campagne, mer, montagne, ciel) et l’ampleur des besoins, des militaires spécialisés interviennent en effet pour des actions spécifiques de service public.
+            </p>
+            <img class="Image11" src="Image11.jpg" alt="Image11.jpg">
+
+            <h1>Les opérations militaires</h1>
+
+            <p class="para10">La protection du territoire national et de nos concitoyens ainsi que la préservation de la continuité des fonctions essentielles de la Nation sont au cœur de notre stratégie de défense et de sécurité nationale.
+            </p>
+            <p class="para10">Les forces armées assurent en permanence la sûreté du territoire, de son espace aérien et de nos approches maritimes. Elles sont en mesure d’apporter leur appui aux opérations de gestion de crise consécutives, par exemple, à des attaques terroristes, ou à une catastrophe naturelle ou technologique.
+            </p>   
+            <p class="para10">La dissuasion nucléaire protège la France contre toute agression d'origine étatique contre ses intérêts vitaux, d’où qu’elle vienne et quelle qu’en soit la forme. Elle écarte toute menace de chantage qui paralyserait sa liberté de décision et d’action. Les forces aériennes et navales assurent, en permanence, la tenue de la posture de dissuasion.
+            </p>  
+            <p class="para10">L'intervention extérieure de nos forces s’inscrit dans un triple objectif : assurer la protection de nos ressortissants à l’étranger, défendre nos intérêts stratégiques, comme ceux de nos partenaires et alliés, et exercer nos responsabilités internationales.
+            </p>
+
+               <img class="Image12" src="Image12.jpg" alt="Image12.jpg"> 
+
+        </div>
+
+        <footer>
+            <div class="footer-section" >
+        
+                <div class="media" >
+        
+                    <a class="media1" href="https://www.facebook.com"><img src="Image32.jpg" alt="Image32.jpg"></a>
+                    <a class="media2" href="https://www.x.com"><img src="Image33.jpg" alt="Image33.jpg"></a>
+                    <a class="media3" href="https://www.linkedin.com"><img src="Image34.jpg" alt="Image34.jpg"></a>
+                    <a class="media4" href="https://www.instagram.com"><img src="Image35.jpg" alt="Image35.jpg"></a>
+                    <a class="media5" href="https://www.youtube.com"><img src="Image36.jpg" alt="Image36.jpg"></a>
+             
+               <h2>Suivez-nous sur nos réseaux sociaux</h2>
+        
+            </div>
+        
+            <div class="lien" >
+        
+               <ul>
+                <li><a href="Accueil.html"><img class="logo1" src="Image6.jpg" alt="Image6.jpg"></a></li>
+                <li><a class="lien1" href="https://www.info.gouv.fr"><h5>info.gouv.fr</h5></a></li>
+                <li><a class="lien2"href="https://www.service-public.fr"><h5>service-public.fr</h5></a></li>
+                <li><a class="lien3"href="https://www.legifrance.gouv.fr/"><h5>legifrance.gouv.fr</h5></a></li>
+                <li><a class="lien4"href="https://www.data.gouv.fr/"><h5>data.gouv.fr/</h5></a></li>
+               </ul>
+        
+        
+               <HR align="halign">
+        
+                <ul>
+                    <li><a href="https://www.defense.gouv.fr/accessibilite"><h6>Accessibilité : partiellement conforme</h6></a></li>
+                <li><a href="https://www.defense.gouv.fr/donnees-personnelles-et-cookies"><h6>Données personnelles</h6></a></li>
+                <li><a href="https://www.defense.gouv.fr/#preferences-cookies"><h6>Gestion des cookies</h6></a></li>
+                <li><a href="https://www.defense.gouv.fr/mentions-legales-conditions-dutilisation-du-site"><h6>Mentions légales</h6></a></li>
+                 
+                <p>Sauf mention contraire, tous les contenus de ce site sont sous <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf">licence etalab-2.0</a></p>
+        
+            </ul>
+                
+               </div>
+        </footer>
+
+</body>
+</html>
